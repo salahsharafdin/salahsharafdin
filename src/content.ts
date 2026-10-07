@@ -29,5 +29,5 @@ export const content = {
   links: {
     title: 'Links',
   },
-  footer: '2026 © Sharafdin Yusuf.',
+  footer: '2026 © Salah Sharafdin.',
 } as const
