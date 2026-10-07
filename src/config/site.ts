@@ -3,7 +3,7 @@ export const siteUrl =
 
 export const site = {
   title: 'Salah Sharafdin',
-  headline: 'Salah Sharafdin — Software Developer',
+  headline: 'Salah Sharafdin, Software Developer',
   fullName: 'Salah Yusuf Sharafdin',
   givenName: 'Salah',
   familyName: 'Sharafdin',
