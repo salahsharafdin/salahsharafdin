@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-background: #000000;
+  --color-foreground: #ffffff;
+  --color-muted: #a3a3a3;
+  --color-border: #262626;
+  --color-link: #4d9fff;
+  --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+html[data-theme='light'] {
+  --color-background: #ffffff;
+  --color-foreground: #000000;
+  --color-muted: #525252;
+  --color-border: #e5e5e5;
+  --color-link: #2563eb;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply m-0 min-h-svh bg-background font-sans text-foreground antialiased;
+  }
+
+  a {
+    @apply text-link underline-offset-2 hover:underline;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
