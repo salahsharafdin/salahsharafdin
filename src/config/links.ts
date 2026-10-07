@@ -12,23 +12,27 @@ export const contactLinks = [
     href: socialLinks.whatsapp,
     value: '+252 617 621631',
     external: true,
+    rel: 'noopener noreferrer',
   },
   {
     label: 'GitHub',
     href: socialLinks.github,
     value: '@salahsharafdin',
     external: true,
+    rel: 'me noopener noreferrer',
   },
   {
     label: 'Instagram',
     href: socialLinks.instagram,
     value: '@salah_yuusuf_sharafdin_7',
     external: true,
+    rel: 'me noopener noreferrer',
   },
   {
     label: 'Email',
     href: socialLinks.email,
     value: 'salahsharafdin@gmail.com',
     external: false,
+    rel: undefined,
   },
 ] as const

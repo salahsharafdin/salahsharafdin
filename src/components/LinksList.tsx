@@ -14,9 +14,8 @@ export function LinksList() {
             <span className="text-foreground">{item.label} </span>
             <a
               href={item.href}
-              {...(item.external
-                ? { target: '_blank', rel: 'noopener noreferrer' }
-                : {})}
+              {...(item.external ? { target: '_blank' } : {})}
+              {...(item.rel ? { rel: item.rel } : {})}
               className="text-link no-underline hover:underline focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-link"
             >
               {item.value}

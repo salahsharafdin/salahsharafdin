@@ -6,48 +6,61 @@ import './globals.css'
 
 const themeScript = `(function(){try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark'){document.documentElement.setAttribute('data-theme',t)}}catch(e){}})();`
 
+const googleVerification = process.env.GOOGLE_SITE_VERIFICATION
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: site.title,
+    default: site.headline,
     template: `%s · ${site.title}`,
   },
   description: site.description,
   applicationName: site.title,
   authors: [{ name: site.fullName, url: siteUrl }],
   creator: site.fullName,
-  keywords: [
-    'Salah Sharafdin',
-    'Salah Yusuf Sharafdin',
-    'Software Developer',
-    'Somast',
-    'web developer',
-  ],
+  publisher: site.fullName,
+  keywords: [...site.keywords],
+  category: 'technology',
   alternates: {
     canonical: '/',
+    languages: {
+      en: '/',
+    },
   },
   openGraph: {
     type: 'profile',
     url: '/',
-    title: site.title,
+    title: site.headline,
     description: site.description,
     siteName: site.title,
     locale: site.locale,
-    firstName: 'Salah',
-    lastName: 'Sharafdin',
+    firstName: site.givenName,
+    lastName: site.familyName,
+    username: 'salahsharafdin',
   },
   twitter: {
-    card: 'summary',
-    title: site.title,
+    card: 'summary_large_image',
+    title: site.headline,
     description: site.description,
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
   },
   icons: {
     icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
   },
+  ...(googleVerification
+    ? { verification: { google: googleVerification } }
+    : {}),
 }
 
 export const viewport: Viewport = {
