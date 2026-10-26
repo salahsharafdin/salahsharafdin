@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: site.headline,
     description: site.description,
-    creator: '@SalahShara63232',
+    creator: '@salahsharafdin',
   },
   robots: {
     index: true,
