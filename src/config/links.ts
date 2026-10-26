@@ -2,6 +2,7 @@ export const socialLinks = {
   somast: 'https://somast.so',
   whatsapp: 'https://wa.me/252617621631',
   github: 'https://github.com/salahsharafdin',
+  daahqaad: 'https://app.daahqaad.com/profile/salah',
   instagram: 'https://instagram.com/salah_yuusuf_sharafdin_7',
   email: 'mailto:salahsharafdin@gmail.com',
 } as const
@@ -18,6 +19,13 @@ export const contactLinks = [
     label: 'GitHub',
     href: socialLinks.github,
     value: '@salahsharafdin',
+    external: true,
+    rel: 'me noopener noreferrer',
+  },
+  {
+    label: 'Daahqaad',
+    href: socialLinks.daahqaad,
+    value: 'salah',
     external: true,
     rel: 'me noopener noreferrer',
   },

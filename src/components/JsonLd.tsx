@@ -53,6 +53,7 @@ export function JsonLd() {
         },
         sameAs: [
           socialLinks.github,
+          socialLinks.daahqaad,
           socialLinks.instagram,
           socialLinks.whatsapp,
         ],
