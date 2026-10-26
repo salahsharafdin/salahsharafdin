@@ -11,4 +11,5 @@ Right now I'm learning machine learning, and I want to become a machine learning
 - WhatsApp: [+252 617 621631](https://wa.me/252617621631)
 - Daahqaad: [salah](https://app.daahqaad.com/profile/salah)
 - Instagram: [@salah_yuusuf_sharafdin_7](https://instagram.com/salah_yuusuf_sharafdin_7)
+- X: [@SalahShara63232](https://x.com/SalahShara63232)
 - Email: [salahsharafdin@gmail.com](mailto:salahsharafdin@gmail.com)

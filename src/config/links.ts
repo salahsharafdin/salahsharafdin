@@ -4,6 +4,7 @@ export const socialLinks = {
   github: 'https://github.com/salahsharafdin',
   daahqaad: 'https://app.daahqaad.com/profile/salah',
   instagram: 'https://instagram.com/salah_yuusuf_sharafdin_7',
+  twitter: 'https://x.com/SalahShara63232',
   email: 'mailto:salahsharafdin@gmail.com',
 } as const
 
@@ -33,6 +34,13 @@ export const contactLinks = [
     label: 'Instagram',
     href: socialLinks.instagram,
     value: '@salah_yuusuf_sharafdin_7',
+    external: true,
+    rel: 'me noopener noreferrer',
+  },
+  {
+    label: 'X',
+    href: socialLinks.twitter,
+    value: '@SalahShara63232',
     external: true,
     rel: 'me noopener noreferrer',
   },

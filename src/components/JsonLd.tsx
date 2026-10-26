@@ -55,6 +55,7 @@ export function JsonLd() {
           socialLinks.github,
           socialLinks.daahqaad,
           socialLinks.instagram,
+          socialLinks.twitter,
           socialLinks.whatsapp,
         ],
       },
